@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Third Challenge Website </title>
+  <!-- Google font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- DaisyUI + Tailwind CSS  CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .manrope-font {
+      font-family: "Manrope", system-ui;
+    }
+  </style>
+  <!--Custom tailwind CSS -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+
+          colors: {
+            clifford: '#da373d',
+            'section-color': '#E9E9E9'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="manrope-font ">
+  <header class="bg-gradient-to-b from-[#F5F5F5] to-[#F4F4F4]">
+    <!-- nav bar  -->
+    <nav class="lg:container mx-auto p-2 md:py-7 ">
+      <div class="navbar">
+        <div class="navbar-start">
+          <a
+            class=" w-52 h-14  text-black md:text-3xl  font-extrabold inline-flex items-center justify-around px-4 py-2">
+            <span class=" bg-[#abef5f] px-2 py-1  rounded-full   ">
+              <i class="fa-solid fa-arrow-right-long  -rotate-45 text-black"></i>
+            </span>
+            Rinterio
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#737373] text-base">
+            <li><a class="font-bold text-black  hover:text-red-600  duration-500 ease-in-out">Home</a></li>
+            <li><a class=" hover:text-red-600 duration-700 ease-in-out">Services</a></li>
+            <li><a class=" hover:text-red-600 duration-700 ease-in-out">Portfolio</a></li>
+            <li><a class=" hover:text-red-600 duration-700 ease-in-out">Blog Us</a></li>
+            <li><a class=" hover:text-red-600 duration-700 ease-in-out">Contact US</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn bg-white btn-circle hidden md:block">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-auto" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <div class="flex-none hidden md:block mx-auto">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn bg-white mx-2 btn-circle">
+                <div class="indicator">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <a
+              class=" w-52 h-14 rounded-full bg-[#abef5f] text-black text-xl font-extrabold inline-flex items-center justify-between px-4 py-2">
+              Book Consult
+              <span class=" bg-black px-2 py-1  rounded-full   ">
+                <i class="fa-solid fa-arrow-right-long  -rotate-45 text-white"></i>
+              </span>
+            </a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class=" md:p-3 p-2 bg-base-100 rounded-full lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class=" h-8  w-8  text-[#737373]" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-20 p-2 -ml-7 shadow">
+              <li><a class="text-[#737373]">Home</a></li>
+              <li><a class="text-[#737373]">Services</a></li>
+              <li><a class="text-[#737373]">Portfolio</a></li>
+              <li><a class="text-[#737373]">Blog Us</a></li>
+              <li><a class="text-[#737373]">Contact US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
