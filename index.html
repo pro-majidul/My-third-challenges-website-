@@ -317,10 +317,10 @@
         </div>
         <!-- second div -->
         <div class="grid md:grid-cols-[1fr,2fr,1fr] gap-6 ">
-          <div class=" bg-transparent border rounded-lg p-4 mt-4 md:mt-0">
+          <div class=" bg-transparent border rounded-lg p-4 mt-4 md:mt-0 md:order-1 order-3">
             <img class="object-cover w-full" src="./assets/img3.png" alt="">
           </div>
-          <div class=" border rounded-lg p-4">
+          <div class=" border rounded-lg p-4 order-2">
             <div class="md:flex justify-between items-center gap-6">
               <div class="md:w-6/12">
                 <img class="w-full" src="./assets/img4.png" alt="">
@@ -338,7 +338,7 @@
               </div>
             </div>
           </div>
-          <div class=" border rounded-lg p-4">
+          <div class=" border rounded-lg p-4 md:order-3 order-1">
             <img class="object-cover w-full" src="./assets/img5.png" alt="">
           </div>
 
@@ -454,6 +454,31 @@
       </div>
 
     </section>
+    <!-- testimonial Section -->
+    <section class="md:container mx-auto md:py-20 p-2 pb-20 ">
+      <h3 class="md:text-3xl text-xl py-4 font-normal text-center underline underline-offset-8 decoration-orange-500">Testimonial</h3>
+      <h1 class="md:text-5xl font-bold text-3xl text-center pb-5 md:mb-12 ">What Clients Say</h1>
+      <!-- people says  -->
+      <div class="md:flex justify-between items-center gap-10 md:py-10 bg-white px-8 py-8 space-y-8 rounded-3xl">
+        <div class="flex-1 p-4 bg-orange-300 rounded-2xl shadow-2xl ">
+          <p class="text-lg font-medium text-gray-600">"My family and I had the pleasure of staying at this lovely house for our recent vacation, and it exceeded all of our expectations! we were impressed by the thoughtful touches throughout the home"</p>
+          <h3 class="text-2xl font-extrabold pt-4">John Deo</h3>
+          <p class="text-gray-700 font-bold">CTO , HB Group</p>
+        </div>
+        <div class="flex-1  bg-green-500 p-4 rounded-2xl shadow-2xl">
+          <p class="text-lg font-medium ">"The spacious living areas provided ample room for everyone to relax and the well-equipped kitchen made meal prep a breeze. The location is ideal—close to local attractions yet in a peaceful neighborhood."</p>
+          <h3 class="text-2xl font-extrabold pt-4">Jonathon Deo</h3>
+          <p class="text-gray-700 font-bold">CIO , OCT Group</p>
+        </div>
+        <div class="flex-1  p-4 bg-blue-500 rounded-2xl shadow-2xl">
+          <p class="text-lg font-medium text-white">"We especially loved the beautifully landscaped backyard, which was perfect for our evening gatherings and morning coffee. The hosts were incredibly accommodating and responsive "</p>
+          <h3 class="text-2xl font-extrabold pt-4">Nicolus Vengelious</h3>
+          <p class="text-gray-700 font-bold">CEO, Octafact Group</p>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Discus next projects -->
     <section class="bg-no-repeat bg-cover bg-center " style="background-image: url('./assets/bg.jpg');">
       <div class="md:container mx-auto md:py-20 p-2 py-10">
